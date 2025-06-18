@@ -1,0 +1,46 @@
+{
+  "name": "carbon-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "test": "vitest",
+    "build": "tsc -b tsconfig.build.json && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "clean": "npx rimraf coverage && npx rimraf dist && npx rimraf node_modules"
+  },
+  "dependencies": {
+    "@sage/design-tokens": "4.35.0",
+    "carbon-react": "153.0.0",
+    "react": "^17.0 || ^18.0",
+    "react-dom": "^17.0 || ^18.0",
+    "styled-components": "^5.3.11"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.0",
+    "@types/react-dom": "^18.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-istanbul": "^3.0.6",
+    "@vitest/eslint-plugin": "^1.1.38",
+    "eslint": "^8.56.0",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-no-unsanitized": "^4.1.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-testing-library": "^7.1.1",
+    "jsdom": "^24.0.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.1",
+    "vitest": "^3.0.6"
+  }
+}
