@@ -9,13 +9,15 @@
     "build": "tsc -b tsconfig.build.json && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "clean": "npx rimraf coverage && npx rimraf dist && npx rimraf node_modules"
+    "clean": "npx rimraf coverage && npx rimraf dist && npx rimraf node_modules",
+    "format": "prettier --write ./src"
   },
   "dependencies": {
     "@sage/design-tokens": "4.35.0",
     "carbon-react": "153.0.0",
     "react": "^17.0 || ^18.0",
     "react-dom": "^17.0 || ^18.0",
+    "react-markdown": "^10.1.0",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
@@ -31,13 +33,17 @@
     "@vitest/coverage-istanbul": "^3.0.6",
     "@vitest/eslint-plugin": "^1.1.38",
     "eslint": "^8.56.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest-dom": "^5.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-no-unsanitized": "^4.1.2",
+    "eslint-plugin-prettier": "^5.5.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.1.1",
     "jsdom": "^24.0.0",
+    "prettier": "3.5.3",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.3",
     "vite": "^6.1.1",

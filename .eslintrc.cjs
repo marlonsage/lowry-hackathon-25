@@ -9,6 +9,7 @@ module.exports = {
     "plugin:react-hooks/recommended-legacy",
     "plugin:jsx-a11y/recommended",
     "plugin:no-unsanitized/recommended-legacy",
+    'eslint-config-prettier'
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: {
